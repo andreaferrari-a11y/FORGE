@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Forge / Training OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme.css" />
+  <link rel="stylesheet" href="logging.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>FORGE</strong><small>TRAINING OS</small></div></div>
+      <nav>
+        <button class="nav-item active" data-view="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-item" data-view="workouts"><span>◴</span> Allenamenti</button>
+        <button class="nav-item" data-view="progress"><span>⌁</span> Progressione</button>
+        <button class="nav-item" data-view="checkin"><span>♡</span> Check-in</button>
+        <button class="nav-item" data-view="program"><span>▤</span> Programma</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="mini-profile"><div class="avatar">AF</div><div><strong>Andrea Ferrari</strong><small>Atleta funzionale</small></div></div><button class="icon-btn" id="themeBtn" title="Cambia tema">☼</button></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div><p class="eyebrow" id="dateLabel">LUNEDÌ 13 OTTOBRE 2026</p><h1 id="pageTitle">Dashboard</h1></div><div class="top-actions"><button class="outline-btn" id="exportBtn">↥ <span>Esporta</span></button><button class="primary-btn" id="startBtn">+ Inizia allenamento</button><button class="mobile-menu" id="menuBtn">☰</button></div></header>
+      <section id="view-dashboard" class="view active-view"></section>
+      <section id="view-workouts" class="view"></section>
+      <section id="view-progress" class="view"></section>
+      <section id="view-checkin" class="view"></section>
+      <section id="view-program" class="view"></section>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <div class="modal-backdrop" id="modal"><div class="modal"><button class="modal-close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+  <script src="app2.js"></script>
+</body>
+</html>
