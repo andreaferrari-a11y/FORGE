@@ -1,0 +1,4 @@
+body.dark{--bg:#101722;--panel:#182332;--text:#f4f7fb;--muted:#94a3b8;--line:#2a384a;--shadow:0 10px 30px rgba(0,0,0,.18)}
+body.dark .outline-btn,body.dark .tab{background:#182332;color:var(--text);border-color:var(--line)}
+body.dark .field input,body.dark .field textarea,body.dark .field select,body.dark .set-row input,body.dark #markdownInput{background:#101722;color:var(--text)}
+body.dark .progress-track,body.dark .day-dot{background:#263446}
